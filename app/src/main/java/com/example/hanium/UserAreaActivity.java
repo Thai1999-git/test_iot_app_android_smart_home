@@ -24,21 +24,20 @@ public class UserAreaActivity extends AppCompatActivity {
         loginPwd = auto.getString("inputPwd", null);
         String name = auto.getString("inputName", null);
         String username = loginId;
-        int age = auto.getInt("inputAge", 0);
+        String mail = auto.getString("inputMail", null);
 
         setContentView(R.layout.activity_user_area);
 
         // xml
         TextView tvWelcomeMsg = (TextView) findViewById(R.id.tvWelcomeMsg);
         TextView etUsername = (TextView) findViewById(R.id.etUsername);
-        TextView etAge = (TextView) findViewById(R.id.etAge);
+        TextView etMail = (TextView) findViewById(R.id.etMail);
 
         // dau ra thong tin nguoi dung
         String message = name + " welcome to your user area";
         tvWelcomeMsg.setText(message);
         etUsername.setText(username);
-        etAge.setText(age + "");
-
+        etMail.setText(mail);
 
     }
 

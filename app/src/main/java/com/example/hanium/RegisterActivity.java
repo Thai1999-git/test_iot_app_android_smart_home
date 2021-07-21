@@ -1,4 +1,4 @@
-package com.example.hanium;
+/*package com.example.hanium;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -28,7 +28,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         //them nut trang chu
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        final EditText etAge = (EditText) findViewById(R.id.etAge);
+        final EditText etMail = (EditText) findViewById(R.id.etMail);
         final EditText etName = (EditText) findViewById(R.id.etName);
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
@@ -40,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final String name = etName.getText().toString();
                 final String username = etUsername.getText().toString();
-                final int age = Integer.parseInt(etAge.getText().toString());
+                final String mail = etMail.getText().toString();
                 final String password = etPassword.getText().toString();
 
                 // Lang nghe va gui den may chu
@@ -76,7 +76,7 @@ public class RegisterActivity extends AppCompatActivity {
                 };
 
                 // RegisterRequest Dang ky bang cach su dung 1 doi tuong.
-                com.example.hanium.RegisterRequest registerRequest = new com.example.hanium.RegisterRequest(name, username, age, password, responseListener);
+                com.example.hanium.RegisterRequest registerRequest = new com.example.hanium.RegisterRequest(name, username, mail, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
             }
@@ -96,4 +96,4 @@ public class RegisterActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-}
+}*/

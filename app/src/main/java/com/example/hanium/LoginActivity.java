@@ -51,13 +51,13 @@ public class LoginActivity extends AppCompatActivity {
                         String name = jsonResponse.getString("name");
                         String username = jsonResponse.getString("username");
                         String password = jsonResponse.getString("password");
-                        int age = jsonResponse.getInt("age");
+                        String mail = jsonResponse.getString("mail");
 
                         SharedPreferences auto = getSharedPreferences("auto",Activity.MODE_PRIVATE);
                         SharedPreferences.Editor autoLogin = auto.edit();
                         autoLogin.putString("inputId",username);
                         autoLogin.putString("inputPwd",password);
-                        autoLogin.putInt("inputAge",age);
+                        autoLogin.putString("inputMail",mail);
                         autoLogin.putString("inputName",name);
                         autoLogin.commit();
 
@@ -106,17 +106,17 @@ public class LoginActivity extends AppCompatActivity {
         // activity
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
-        final TextView tvRegisterLink = (TextView) findViewById(R.id.tvRegisterLink);
+        //final TextView tvRegisterLink = (TextView) findViewById(R.id.tvRegisterLink);
         final Button bLogin = (Button) findViewById(R.id.bSignIn);
 
-        //nut dang ky!
-        tvRegisterLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent registerIntent = new Intent(LoginActivity.this, com.example.hanium.RegisterActivity.class);
-                LoginActivity.this.startActivity(registerIntent);
-            }
-        });
+//        //nut dang ky!
+//        tvRegisterLink.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent registerIntent = new Intent(LoginActivity.this, com.example.hanium.RegisterActivity.class);
+//                LoginActivity.this.startActivity(registerIntent);
+//            }
+//        });
 
 
         //nut dang nhap

@@ -5,8 +5,36 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b40b0eea-cd30-4cfa-bd2f-fd150fdc43c6" name="Default Changelist" comment="" />
+    <list default="true" id="b40b0eea-cd30-4cfa-bd2f-fd150fdc43c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-anydpi/ic_action_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-hdpi/ic_action_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-mdpi/ic_action_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-xhdpi/ic_action_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable-xxhdpi/ic_action_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/homes_lists_for_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/MqttAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/MqttAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/RegisterActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/RegisterActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/UserAreaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/UserAreaActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_user_area.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_user_area.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/nav_header_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/nav_header_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +54,24 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1tFZGFGgkfSWgVP1yUX3LBxnwgv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable-mdpi" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/res/drawable-mdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GmailRecyclerView/app" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,5 +162,18 @@
       <updated>1622366699810</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

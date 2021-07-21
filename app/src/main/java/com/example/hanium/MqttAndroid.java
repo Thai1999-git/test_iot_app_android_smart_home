@@ -16,7 +16,7 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 public class MqttAndroid extends MqttAndroidClient {
     public MqttAndroid(Context context, final String topic, final Switch sw) {
-        // 주소 변경
+        // thay doi dia chi
         super(context,IpPath.MQTTIP, MqttClient.generateClientId());
         try{
             //ket noi voi lop doi tuong

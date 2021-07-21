@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="hanium/app" />
-      <module fileurl="file://$PROJECT_DIR$/../hanium.iml" filepath="$PROJECT_DIR$/../hanium.iml" group="hanium" />
+      <module fileurl="file://$PROJECT_DIR$/../Smart_Home_AndroidApp_iot.iml" filepath="$PROJECT_DIR$/../Smart_Home_AndroidApp_iot.iml" group="Smart_Home_AndroidApp_iot" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="Smart_Home_AndroidApp_iot/app" />
     </modules>
   </component>
 </project>

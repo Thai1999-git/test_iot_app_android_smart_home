@@ -16,6 +16,12 @@
             android:id="@+id/nav_home_status"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Trạng thái nhà" />
+
+        <item
+            android:id="@+id/all_home"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Nhà của user"/>
+
     </group>
 
     <item android:title="Thông tin người sử dụng">

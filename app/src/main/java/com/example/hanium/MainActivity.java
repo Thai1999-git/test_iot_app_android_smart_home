@@ -78,12 +78,12 @@ public class MainActivity extends AppCompatActivity
                         String name = jsonResponse.getString("name");
                         String username = jsonResponse.getString("username");
                         String password = jsonResponse.getString("password");
-                        int age = jsonResponse.getInt("age");
+                        String mail = jsonResponse.getString("mail");
                         loginSuccess = true;
                         //luu tru thong tin ca nhan hoac cap nhat,
                         autoLogin.putString("inputId",username);
                         autoLogin.putString("inputPwd",password);
-                        autoLogin.putInt("inputAge",age);
+                        autoLogin.putString("inputMail",mail);
                         autoLogin.putString("inputName",name);
                         autoLogin.commit();
 
@@ -178,10 +178,10 @@ public class MainActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        int gid = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (gid == R.id.action_settings) {
             return true;
         }
 
@@ -194,11 +194,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
+        int gid = item.getItemId();
 
         // nhan nut dang nhap
         // intent LoginActivity
-        if (id == R.id.nav_login) {
+        if (gid == R.id.nav_login) {
 
             //nhan dang xuat
             if(loginPwd != null && loginId != null && loginSuccess) {
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity
                                 SharedPreferences.Editor autoLogout = auto.edit();
                                 autoLogout.putString("inputId",null);
                                 autoLogout.putString("inputPwd",null);
-                                autoLogout.putInt("inputAge",0);
+                                autoLogout.putString("inputMail",null);
                                 autoLogout.putString("inputName",null);
                                 autoLogout.commit();
 
@@ -238,20 +238,20 @@ public class MainActivity extends AppCompatActivity
             }
         }
         // intent UserAreaActivity
-        else if (id == R.id.nav_control) {
-            if(loginPwd != null && loginId != null && loginSuccess) {
+        else if (gid == R.id.nav_control) {
+            //if(loginPwd != null && loginId != null && loginSuccess) {
                 Intent intent = new Intent(MainActivity.this, ControlActivity.class);
                 MainActivity.this.startActivity(intent);
-            }
+            //}
             //neu chua dang nhap (Alert)
-            else{
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setMessage("Chưa đăng nhập.")
-                        .setNegativeButton("Retry", null)
-                        .create()
-                        .show();
-            }
-        } else if (id == R.id.nav_home_status) {
+//            else{
+//                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//                builder.setMessage("Chưa đăng nhập.")
+//                        .setNegativeButton("Retry", null)
+//                        .create()
+//                        .show();
+//            }
+        } else if (gid == R.id.nav_home_status) {
             if(loginPwd != null && loginId != null && loginSuccess) {
                 Intent intent = new Intent(MainActivity.this, HomeStatusActivity.class);
                 MainActivity.this.startActivity(intent);
@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity
                         .create()
                         .show();
             }
-        }  else if (id == R.id.nav_userinfo) {
+        }  else if (gid == R.id.nav_userinfo) {
             if(loginPwd != null && loginId != null && loginSuccess) {
                 Intent intent = new Intent(MainActivity.this, UserAreaActivity.class);
                 MainActivity.this.startActivity(intent);
@@ -277,6 +277,9 @@ public class MainActivity extends AppCompatActivity
                         .create()
                         .show();
             }
+        }  else if (gid == R.id.all_home){
+                Intent intent = new Intent(MainActivity.this, HomeListActivity.class);
+                MainActivity.this.startActivity(intent);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
