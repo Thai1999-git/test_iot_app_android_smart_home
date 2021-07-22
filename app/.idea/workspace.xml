@@ -10,24 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b40b0eea-cd30-4cfa-bd2f-fd150fdc43c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/HomeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/ControlActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/ControlActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/DeviceChangeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/DeviceChangeActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/DeviceListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/DeviceListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/EspListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/EspListActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/HomeListActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/HomeStatusActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/HomeStatusActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/MqttAndroid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/MqttHome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hanium/UserAreaActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hanium/UserAreaActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_user_area.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_user_area.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/device_changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/device_changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/homes_lists_for_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/homes_lists_for_user.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +22,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="eda50b3d0105" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -173,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626860375588</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update api connect">
+      <created>1626923293189</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626923293189</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update api connect">
+      <created>1626923366289</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626923366289</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +192,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update testing" />
     <MESSAGE value="update drawable" />
-    <option name="LAST_COMMIT_MESSAGE" value="update drawable" />
+    <MESSAGE value="update api connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="update api connect" />
   </component>
 </project>

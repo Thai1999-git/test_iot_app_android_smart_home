@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".FillInfo">
+
+    <TextView
+        android:id="@+id/fillHead1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device 1"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_below="@+id/fillHead1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="Name:"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/nameDevi1"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_below="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Max value:"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/maxDevi1"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll7"
+        android:layout_below="@+id/ll6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Min value:"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/minDevi1"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll8"
+        android:layout_below="@+id/ll7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="Type:"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/typeDevi1"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll8"
+        android:text="confirm"
+        android:textSize="25sp"/>
+
+</RelativeLayout>

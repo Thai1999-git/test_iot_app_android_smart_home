@@ -10,7 +10,7 @@
     android:paddingTop="16dp"
     tools:context=".DeviceChangeActivity">
 
-    <Button
+    <TextView
         android:id="@+id/headDevi1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,9 +27,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="30dp"
+            android:layout_width="35dp"
             android:layout_height="50dp"
-            android:text="id:"
+            android:text="ID:"
             android:textStyle="bold"
             android:textSize="25sp"/>
 
@@ -51,7 +51,7 @@
         <TextView
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:text="name:"
+            android:text="Name:"
             android:textStyle="bold"
             android:textSize="25sp"/>
 
@@ -73,15 +73,21 @@
         <TextView
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:text="status:"
+            android:text="Status:"
             android:textStyle="bold"
             android:textSize="25sp"/>
 
-        <TextView
+        <CheckBox
             android:id="@+id/statDevi1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -95,15 +101,21 @@
         <TextView
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:text="auto:"
+            android:text="Auto:"
             android:textStyle="bold"
             android:textSize="25sp"/>
 
-        <TextView
+        <CheckBox
             android:id="@+id/autoDevi1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -117,7 +129,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="pin_number:"
+            android:text="Pin number:"
             android:textStyle="bold"
             android:textSize="25sp"/>
 
@@ -137,9 +149,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="max:"
+            android:text="Max value:"
             android:textStyle="bold"
             android:textSize="25sp"/>
 
@@ -159,9 +171,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="min:"
+            android:text="Min value:"
             android:textStyle="bold"
             android:textSize="25sp"/>
 
@@ -183,7 +195,7 @@
         <TextView
             android:layout_width="80dp"
             android:layout_height="50dp"
-            android:text="type:"
+            android:text="Type:"
             android:textStyle="bold"
             android:textSize="25sp"/>
 
@@ -194,5 +206,13 @@
             android:textSize="25sp"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/fill1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll8"
+        android:text="fill"
+        android:textSize="25sp"/>
 
 </RelativeLayout>

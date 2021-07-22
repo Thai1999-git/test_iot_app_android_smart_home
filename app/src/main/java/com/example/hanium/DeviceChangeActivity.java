@@ -4,11 +4,14 @@ import android.app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -36,51 +39,112 @@ public class DeviceChangeActivity extends AppCompatActivity {
 //        min = auto.getString("inputMinValue", null);
 //        type = auto.getString("inputType", null);
 
-        final TextView idDevi1 = findViewById(R.id.idDevi1);
-        final TextView nameDevi1 = findViewById(R.id.nameDevi1);
-        final TextView statDevi1 = findViewById(R.id.statDevi1);
-        final TextView autoDevi1 = findViewById(R.id.autoDevi1);
-        final TextView pinDevi1 = findViewById(R.id.pinDevi1);
-        final TextView maxDevi1 = findViewById(R.id.maxDevi1);
-        final TextView minDevi1 = findViewById(R.id.minDevi1);
-        final TextView typeDevi1 = findViewById(R.id.typeDevi1);
+        final CheckBox status = (CheckBox) findViewById(R.id.statDevi1);
+        final CheckBox auto = (CheckBox) findViewById(R.id.autoDevi1);
 
-        final Button headDevice1 = (Button) findViewById(R.id.headDevi1);
-        headDevice1.setOnClickListener(new View.OnClickListener() {
+        final TextView id = findViewById(R.id.idDevi1);
+        final TextView name = findViewById(R.id.nameDevi1);
+        //final TextView status = findViewById(R.id.statDevi1);
+        //final TextView auto = findViewById(R.id.autoDevi1);
+        final TextView pin_number = findViewById(R.id.pinDevi1);
+        final TextView max_value = findViewById(R.id.maxDevi1);
+        final TextView min_value = findViewById(R.id.minDevi1);
+        final TextView type = findViewById(R.id.typeDevi1);
+
+        final TextView headDevice1 = findViewById(R.id.headDevi1);
+//        headDevice1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                RequestQueue queue = Volley.newRequestQueue(DeviceChangeActivity.this);
+//                String url = "http://ec2-13-125-196-246.ap-northeast-2.compute.amazonaws.com:8000/api/device/1/";
+//                StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        id.setText(response);
+//                        name.setText(response);
+//                        status.setText(response);
+//                        auto.setText(response);
+//                        pin_number.setText(response);
+//                        max_value.setText(response);
+//                        min_value.setText(response);
+//                        type.setText(response);
+//                    }
+//                }, new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError volleyError) {
+//                        id.setText("empty");
+//                        name.setText("empty");
+//                        //status.setText("empty");
+//                        //auto.setText("empty");
+//                        pin_number.setText("empty");
+//                        max_value.setText("empty");
+//                        min_value.setText("empty");
+//                        type.setText("empty");
+//                    }
+//                });
+//
+//                queue.add(stringRequest);
+//            }
+//        });
+
+        Thread t = new Thread(){
+            @Override
+            public void run(){
+                while (!isInterrupted()){
+                    try{
+                        Thread.sleep(5000);
+
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+
+                                RequestQueue queue = Volley.newRequestQueue(DeviceChangeActivity.this);
+                                String url = "http://ec2-13-125-196-246.ap-northeast-2.compute.amazonaws.com:8000/api/device/1/";
+                                StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+                                    @Override
+                                    public void onResponse(String response) {
+                                        id.setText(response);
+                                        name.setText(response);
+                                        //status.setText(response);
+                                        //auto.setText(response);
+                                        pin_number.setText(response);
+                                        max_value.setText(response);
+                                        min_value.setText(response);
+                                        type.setText(response);
+                                    }
+                                }, new Response.ErrorListener() {
+                                    @Override
+                                    public void onErrorResponse(VolleyError volleyError) {
+                                        id.setText("empty");
+                                        name.setText("empty");
+                                        //status.setText("empty");
+                                        //auto.setText("empty");
+                                        pin_number.setText("empty");
+                                        max_value.setText("empty");
+                                        min_value.setText("empty");
+                                        type.setText("empty");
+                                    }
+                                });
+
+                                queue.add(stringRequest);
+                            }
+                        });
+                    } catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+        t.start();
+
+        Button fill1 = (Button) findViewById(R.id.fill1);
+        fill1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RequestQueue queue = Volley.newRequestQueue(DeviceChangeActivity.this);
-                String url = "http://ec2-13-125-196-246.ap-northeast-2.compute.amazonaws.com:8000/api/device/1/";
-                StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        idDevi1.setText(response);
-                        nameDevi1.setText(response);
-                        statDevi1.setText(response);
-                        autoDevi1.setText(response);
-                        pinDevi1.setText(response);
-                        maxDevi1.setText(response);
-                        minDevi1.setText(response);
-                        typeDevi1.setText(response);
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError volleyError) {
-                        idDevi1.setText("unknown");
-                        nameDevi1.setText("unknown");
-                        statDevi1.setText("unknown");
-                        autoDevi1.setText("unknown");
-                        pinDevi1.setText("unknown");
-                        maxDevi1.setText("unknown");
-                        minDevi1.setText("unknown");
-                        typeDevi1.setText("unknown");
-                    }
-                });
-
-                queue.add(stringRequest);
+                Intent intent = new Intent(DeviceChangeActivity.this, FillInfo.class);
+                DeviceChangeActivity.this.startActivity(intent);
             }
         });
-
     }
 
     //xu ly nut trang chu

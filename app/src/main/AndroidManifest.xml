@@ -42,6 +42,7 @@
         <activity android:name=".EspListActivity"></activity>
         <activity android:name=".DeviceListActivity"></activity>
         <activity android:name=".DeviceChangeActivity"></activity>
+        <activity android:name=".FillInfo"></activity>
 <!--        <activity android:name=".ControlActivity"></activity>-->
 <!--        <activity android:name=".HomeStatusActivity"></activity>-->
     </application>
