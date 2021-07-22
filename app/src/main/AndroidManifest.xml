@@ -33,13 +33,17 @@
             android:name=".LoginActivity"
             android:theme="@style/IntroTheme">
         </activity>
-        <activity android:name=".RegisterActivity" />
+<!--        <activity android:name=".RegisterActivity" />-->
         <activity
             android:windowSoftInputMode="adjustResize"
             android:name=".UserAreaActivity"
             />
-        <activity android:name=".ControlActivity"></activity>
-        <activity android:name=".HomeStatusActivity"></activity>
+        <activity android:name=".HomeList"></activity>
+        <activity android:name=".EspListActivity"></activity>
+        <activity android:name=".DeviceListActivity"></activity>
+        <activity android:name=".DeviceChangeActivity"></activity>
+<!--        <activity android:name=".ControlActivity"></activity>-->
+<!--        <activity android:name=".HomeStatusActivity"></activity>-->
     </application>
 
 </manifest>

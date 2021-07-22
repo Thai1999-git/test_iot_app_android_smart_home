@@ -1,6 +1,7 @@
 package com.example.hanium;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +11,7 @@ import android.widget.TextView;
 
 
 public class UserAreaActivity extends AppCompatActivity {
-    String loginId,loginPwd;
+    //String loginId,loginPwd;
 
 
     @Override
@@ -20,24 +21,26 @@ public class UserAreaActivity extends AppCompatActivity {
 
 
         SharedPreferences auto = getSharedPreferences("auto", Activity.MODE_PRIVATE);
-        loginId = auto.getString("inputId", null);
-        loginPwd = auto.getString("inputPwd", null);
-        String name = auto.getString("inputName", null);
-        String username = loginId;
-        String mail = auto.getString("inputMail", null);
+//        loginId = auto.getString("inputId", null);
+//        loginPwd = auto.getString("inputPwd", null);
+        Intent intent = getIntent();
+        //String name = auto.getString("inputName", null);
+        String name = intent.getStringExtra("name");
+        String username = intent.getStringExtra("username");
+        //String mail = auto.getString("inputMail", null);
 
         setContentView(R.layout.activity_user_area);
 
         // xml
         TextView tvWelcomeMsg = (TextView) findViewById(R.id.tvWelcomeMsg);
         TextView etUsername = (TextView) findViewById(R.id.etUsername);
-        TextView etMail = (TextView) findViewById(R.id.etMail);
+        //TextView etMail = (TextView) findViewById(R.id.etMail);
 
         // dau ra thong tin nguoi dung
         String message = name + " welcome to your user area";
         tvWelcomeMsg.setText(message);
         etUsername.setText(username);
-        etMail.setText(mail);
+        //etMail.setText(mail);
 
     }
 

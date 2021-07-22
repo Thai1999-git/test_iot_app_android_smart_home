@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity
         // intent UserAreaActivity
         else if (gid == R.id.nav_control) {
             //if(loginPwd != null && loginId != null && loginSuccess) {
-                Intent intent = new Intent(MainActivity.this, ControlActivity.class);
+                Intent intent = new Intent(MainActivity.this, HomeList.class);
                 MainActivity.this.startActivity(intent);
             //}
             //neu chua dang nhap (Alert)
@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity
 //            }
         } else if (gid == R.id.nav_home_status) {
             if(loginPwd != null && loginId != null && loginSuccess) {
-                Intent intent = new Intent(MainActivity.this, HomeStatusActivity.class);
+                Intent intent = new Intent(MainActivity.this, HomeList.class);
                 MainActivity.this.startActivity(intent);
             }
 
@@ -278,7 +278,7 @@ public class MainActivity extends AppCompatActivity
                         .show();
             }
         }  else if (gid == R.id.all_home){
-                Intent intent = new Intent(MainActivity.this, HomeListActivity.class);
+                Intent intent = new Intent(MainActivity.this, HomeList.class);
                 MainActivity.this.startActivity(intent);
         }
 

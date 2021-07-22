@@ -8,32 +8,52 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context=".HomeListActivity">
+    tools:context=".HomeList">
 
     <Button
-        android:id="@+id/home1"
+        android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="100dp"
-        android:text="Home 1" />
+        android:layout_centerHorizontal="true"
+        android:text="Home:"
+        android:textSize="25sp"/>
 
-    <ImageButton
-        android:id="@+id/addImage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_toRightOf="@+id/home1"
-        android:contentDescription="@string/nav_header_desc"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/ic_action_add" />
+    <TextView
+        android:id="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="id"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/home"
+        android:layout_marginTop="110dp"/>
 
     <Button
-        android:id="@+id/dltBtn"
-        android:layout_width="75dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_toRightOf="@+id/addImage"
-        android:text="delete"/>
+        android:id="@+id/btnGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/home"/>
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/addImage"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_toRightOf="@+id/home1"-->
+<!--        android:contentDescription="@string/nav_header_desc"-->
+<!--        android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+<!--        app:srcCompat="@drawable/ic_action_add" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/dltBtn"-->
+<!--        android:layout_width="75dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:layout_toRightOf="@+id/addImage"-->
+<!--        android:text="delete"/>-->
 
 </RelativeLayout>
